@@ -10,6 +10,7 @@
   <ItemGroup>
     <None Update="worldcities1m.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
