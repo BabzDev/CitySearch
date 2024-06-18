@@ -35,12 +35,15 @@ while (citySelection != "1" && citySelection != "2" && citySelection != "exit")
 }
 
 Console.WriteLine("Cities loaded successfully.");
-Console.WriteLine();
-
+Console.WriteLine("Initialising city search cache...");
 var cityFinder = new CityFinder(cities);
+
+Console.WriteLine("City search cache initialised successfully.");
+Console.WriteLine();
 
 while (true)
 {
+    
     Console.WriteLine("Enter city prefix to search (or 'exit' to quit):");
     string input = Console.ReadLine();
     if (input.Equals("exit", StringComparison.OrdinalIgnoreCase))
